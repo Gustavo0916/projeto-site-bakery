@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="js/script.js" defer></script>
+    <title>Bakery - Padaria</title>
+</head>
+<body>
+    
+    <section id="container-principal"> <!-- INICIO CONTAINER PRINCIPAL -->
+        <header> <!-- INICIO HEADER -->
+            <div class="caixa-logo">
+                <div class="img-logo">
+                    <img src="imagens/logo.png" alt="">
+                </div>
+            </div>
+
+            <nav class="navegacao">
+                <ul>
+                    <li> <button type="button"> Home </button> </li>
+                    <li> <button type="button"> Produtos </button> </li>
+                    <li> <button type="button"> História </button> </li>
+                    <li> <button type="button"> Novidade </button> </li>
+                    <li> <button type="button"> Contato </button> </li>
+                    <div class="pesquisa">
+                        <input class="pesquisa" type="text" placeholder="Pesquisar...">
+                        <div class="icone-pesquisa">
+                            <svg width="20" height="20" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14.385 15.446a6.751 6.751 0 1 1 1.06-1.06l5.156 5.155a.75.75 0 1 1-1.06 1.06l-5.156-5.155ZM6.46 13.884a5.25 5.25 0 1 1 7.43-.005l-.005.005-.005.004a5.25 5.25 0 0 1-7.42-.004Z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile"> <!-- INICIO MENU MOBILE -->
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li> <button type="button"> Home </button> </li>
+                        <li> <button type="button"> Produtos </button> </li>
+                        <li> <button type="button"> História </button> </li>
+                        <li> <button type="button"> Novidade </button> </li>
+                        <li> <button type="button"> Contato </button> </li>
+                        <div class="pesquisa">
+                            <input class="pesquisa" type="text" placeholder="Pesquisar...">
+                        </div>
+                    </ul>
+                </nav>
+            </div> <!-- FIM MENU MOBILE -->
+
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div>
+        </header> <!-- FIM HEADER -->
+
+        <!----------------------------------------------------------------->
+
+        <section id="home"> <!-- INICIO HOME -->
+            <div class="caixa-img-home">
+                <div class="titulo-home">
+                    <h1> <span>Humm!!!</span> </h1>
+                    <h2 class="subTitulo"> É de dar água na boca! </h2>
+                </div>
+                <div class="caixa-btn-home">
+                    <div class="btn-home-1">
+                        <button type="button"> Seja um distribuidor </button>
+                    </div>
+                    <div class="btn-home-2">
+                        <button type="button"> Agende uma visita </button>
+                    </div>
+                </div>
+                <div class="caixa-img-trigo">
+                    <img src="imagens/img-trigo.png" alt="">
+                </div>
+            </div>
+        </section> <!-- FIM HOME -->
+
+        <!----------------------------------------------------------------->
+        
+        <section id="container-sobre"> <!-- INICIO CONTAINER SOBRE -->
+            <div class="caixa-principal-sobre"> <!-- INICIO CAIXA PRINCIPAL SOBRE -->
+                <div class="caixa-left-sobre">
+                    <div class="img-fundo">
+                        <img src="imagens/img-fundo.png" alt="">
+                    </div>
+                    <div class="img-sobre">
+                        <img src="imagens/img-sobre.png" alt="">
+                    </div>
+                </div>
+
+                <div class="caixa-right-sobre">
+                    <div class="titulo-sobre">
+                        <h1> Ingredientes </h1>
+                        <h1> <span>Selecionados</span> </h1>
+                    </div>
+                    <div class="descricao-sobre">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia maxime ipsa dolore error sint provident quam natus odit ex impedit officiis quibusdam recusandae exercitationem libero deleniti eveniet, sunt voluptas soluta. </p>
+                    </div>
+                    <div class="descricao-sobre">
+                        <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean sit amet euismod arcu, vel finibus nisl. Vivamus vel metus mollis, condimentum ante pulvinar, iaculis mauris. Nullam metus ante, consectetur. </p>
+                    </div>
+                    <div class="descricao-sobre">
+                        <p> Cras in lectus quis arcu facilisis aliquam. Aliquam at velit mauris. Fusce venenatis dictum finibus. Etiam eget mauris fermentum, sodales lectus vel, facilisis dui. </p>
+                    </div>
+                    <div class="caixa-img-plantacao">
+                        <img src="imagens/img-plantacao.jpg" alt="">
+                    </div>
+                </div>
+            </div> <!-- FIM CAIXA PRINCIPAL SOBRE -->
+        </section> <!-- FIM CONTAINER SOBRE -->
+
+        <!----------------------------------------------------------------->
+
+        <section id="container-produto"> <!-- INICIO CONTAINER PRODUTO -->
+            <div class="titulo-produto">
+                <h1> Levando <span>qualidade e sabor</span> para a mesa do cliente </h1>
+            </div>
+            <div class="caixa-principal-produto"> <!-- INICIO CAIXA PRINCIPAL PRODUTO -->
+                <div class="caixa-produto">
+                    <div class="caixa-img-produto">
+                        <img src="imagens/img-produto-1.jpg" alt="">
+                    </div>
+                    <div class="titulo-item-produto">
+                        <h2> Croissant </h2>
+                    </div>
+                    <div class="descricao-produto">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, adipisci sunt dicta eligendi. </p>
+                    </div>
+                    <div class="btn-produto">
+                        <button type="button"> saiba mais </button>
+                    </div>
+                </div>
+
+                <!---->
+
+                <div class="caixa-produto">
+                    <div class="caixa-img-produto">
+                        <img src="imagens/img-produto-2.jpg" alt="">
+                    </div>
+                    <div class="titulo-item-produto">
+                        <h2> Ciabatta </h2>
+                    </div>
+                    <div class="descricao-produto">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, adipisci sunt dicta eligendi. </p>
+                    </div>
+                    <div class="btn-produto">
+                        <button type="button"> Saudáveis </button>
+                    </div>
+                </div>
+
+                <!---->
+
+                <div class="caixa-produto">
+                    <div class="caixa-img-produto">
+                        <img src="imagens/img-produto-3.jpg" alt="">
+                    </div>
+                    <div class="titulo-item-produto">
+                        <h2> Pães artesanais </h2>
+                    </div>
+                    <div class="descricao-produto">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, adipisci sunt dicta eligendi. </p>
+                    </div>
+                    <div class="btn-produto">
+                        <button type="button"> Nossa linha </button>
+                    </div>
+                </div>
+            </div> <!-- FIM CAIXA PRINCIPAL PRODUTO -->
+        </section>
+    
+    <!----------------------------------------------------------------->
+
+        <section id="container-historia"> <!-- INICIO CONTAINER HISTORIA -->
+            <div class="titulo-historia">
+                <h1> Combinamos o melhor da tecnologia, aliada à <span>força da nossa tradição. </span> </h1>
+            </div>
+            <div class="caixa-principal-historia"> <!-- INICIO CAIXA PRINCIPAL HISTORIA -->
+                <div class="caixa-historia"> <!-- INICIO CAIXA HISTORIA -->
+                    <div class="titulo-caixa-historia">
+                        <h2> Nossa história </h2>
+                    </div>
+                    <div class="descricao-historia">
+                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit 
+                            aliquam, dolor enim, consequatur eveniet atque nulla aspernatur 
+                            ipsam dolorem totam asperiores repellendus adipisci? Ducimus, 
+                            sequi. Nulla culpa rerum accusantium voluptatum. 
+                        </p>
+                        <p> Proin sed est libero. Sed auctor ligula in risus pulvinar, 
+                            a tristique odio pretium. Vestibulum ante ipsum primis in 
+                            faucibus orci luctus et ultrices posuere cubilia curae; Class 
+                            aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                            per inceptos himenaeos. Proin tristique nulla ut lectus mattis,
+                            nec tincidunt dui scelerisque. Proin euismod hendrerit.
+                            Etiam eu mauris sodales, congue metus at, accumsan magna. 
+                            Sed euismod justo ligula, non commodo nisi semper non. Nunc 
+                            erat eros, sagittis in enim a, blandit blandit sem. Suspendisse
+                            sit amet justo tellus. Nulla ac fringilla metus. Proin vitae
+                            quam felis. In volutpat ultrices arcu, ut euismod risus 
+                            accumsan eu. Cras rhoncus egestas mattis. 
+                        </p>
+                    </div>
+                    <div class="btn-historia">
+                        <button type="button"> Seja um distribuidor </button>
+                    </div> 
+                </div> <!-- FIM CAIXA HISTORIA -->
+                
+                <div class="caixa-img-historia">
+                    <img src="imagens/img-historia.jpg" alt="">
+                </div>
+
+                <div class="caixa-icons-historia">
+                    <div class="caixa-icons">
+                        <div class="caixa-img-icon">
+                            <img src="imagens/img-icone-1.png" alt="">
+                        </div>
+                        <div class="descricao-icons">
+                            <p> Grande variedade de pães para diversos gostos </p>
+                        </div>
+                    </div>
+
+                    <div class="caixa-icons">
+                        <div class="caixa-img-icon">
+                            <img src="imagens/img-icone-2.png" alt="">
+                        </div>
+                        <div class="descricao-icons">
+                            <p> Completa linha de alimentos orgânicos </p>
+                        </div>
+                    </div>
+
+                    <div class="caixa-icons">
+                        <div class="caixa-img-icon">
+                            <img src="imagens/img-icone-3.png" alt="">
+                        </div>
+                        <div class="descricao-icons">
+                            <p> Produção artesanal com qualidade e tradição </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- FIM CAIXA PRINCIPAL HISTORIA -->
+        </section> <!-- FIM CONTAINER HISTORIA -->
+    
+        <!----------------------------------------------------------------->
+        
+        <section id="container-faleConosco"> <!-- INICIO CONTAINER FALE CONOSCO -->
+            <div class="caixa-img-fundo-bege"> <!-- INICIO CAIXA IMG FUNDO BEGE -->
+                <div class="caixa-descricao">
+                    <div class="img-iconer-trigo">
+                        <img src="imagens/img-icone-trigo.png" alt="">
+                    </div>
+                    <div class="parceiros">
+                        <h1> 157 </h1>
+                        <p> Parceiros satisfeitos </p>
+                    </div>
+                    <div class="descricao-faleConosco">
+                        <p> Crescendo </p>
+                    </div>
+                </div>
+
+                <div class="caixa-descricao">
+                    <div class="img-iconer-trigo">
+                        <img src="imagens/img-icone-trigo.png" alt="">
+                    </div>
+                    <div class="parceiros">
+                        <h1> 541 </h1>
+                        <p> Produtos diferentes </p>
+                    </div>
+                    <div class="descricao-faleConosco">
+                        <p> Inovação </p>
+                    </div>
+                </div>
+
+                <div class="caixa-descricao">
+                    <div class="img-iconer-trigo">
+                        <img src="imagens/img-icone-trigo.png" alt="">
+                    </div>
+                    <div class="parceiros">
+                        <h1> 326 </h1>
+                        <p> Colaboradores </p>
+                    </div>
+                    <div class="descricao-faleConosco">
+                        <p> Nossa família </p>
+                    </div>
+                </div>
+
+                <div class="caixa-descricao">
+                    <div class="img-iconer-trigo">
+                        <img src="imagens/img-icone-trigo.png" alt="">
+                    </div>
+                    <div class="parceiros">
+                        <h1> 56 </h1>
+                        <p> Anos de experiência </p>
+                    </div>
+                    <div class="descricao-faleConosco">
+                        <p> História de valor </p>
+                    </div>
+                </div>
+            </div> <!-- FIM CAIXA IMG FUNDO BEGE -->
+
+            <!---->
+
+            <div class="caixa-principal-faleConosco"> <!-- INICIO CAIXA PRINCIPAL FALE CONOSCO -->
+                <div class="caixa-left-fc">
+                    <img src="imagens/img-cesta-pao.jpg" alt="">
+                </div>
+
+                <!---->
+
+                <div class="caixa-right-fc">
+                    <div class="caixa-titulo-right">
+                        <h1> <span>Junte-se</span> à família </h1>
+                    </div>
+
+                    <div class="descricao-caixa-right">
+                        <h3> Estrutura de franquia </h3>
+                        <p> Expedita eaque iste harum quod explicabo alias. </p>
+                    </div>
+
+                    <div class="descricao-caixa-right">
+                        <h3> Suporte </h3>
+                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+
+                    <div class="descricao-caixa-right">
+                        <h3> Maior case de alimentos </h3>
+                        <p>  Modi repellendus at cum reprehenderit, ducimus harum. </p>
+                    </div>
+                    <div class="caixa-btn-faleConosco">
+                        <button type="button"> Fale conosco </button>
+                    </div>
+                </div>
+            </div> <!-- FIM CAIXA PRINCIPAL FALE CONOSCO -->
+        </section> <!-- FIM CONTAINER FALE CONOSCO -->
+    
+        <!----------------------------------------------------------------->
+        <section id="container-blog"> <!-- INICIO CONTAINER BLOG -->
+            <div class="titulo-blog">
+                <h1> Novidades saindo <span>direto do forno</span> </h1>
+            </div>
+
+            <div class="caixa-principal-blog"> <!-- INICIO CAIX PRINCIPAL BLOG -->
+                <div class="caixa-blog">
+                    <div class="caixa-img-blog">
+                        <img src="imagens/img-blog-1.jpg" alt="">
+                    </div>
+                    <div class="titulo-publicaçao">
+                        <h3> Pão escuro de centeio </h3>
+                    </div>
+                    <div class="descricao-blog">
+                        <p> Integer porta orci vitae nisi volutpat, quis aliquam nibh vehicula. In sagittis pellentesque nunc non hendrerit. Morbi sodales odio in nibh rhoncus mollis. </p>
+                    </div>  
+                </div>
+
+                <div class="linha-separar"></div>
+
+                <div class="caixa-blog">
+                    <div class="caixa-img-blog">
+                        <img src="imagens/img-blog-2.jpg" alt="">
+                    </div>
+                    <div class="titulo-publicaçao">
+                        <h3> Pão integral </h3>
+                    </div>
+                    <div class="descricao-blog">
+                        <p> Fusce efficitur eros at diam varius, quis consectetur diam euismod. Orci varius natoque penatibus et magnis dis parturient montes. </p>
+                    </div>  
+                </div>
+
+                <div class="linha-separar"></div>
+
+                <div class="caixa-blog">
+                    <div class="caixa-img-blog">
+                        <img src="imagens/img-blog-3.jpg" alt="">
+                    </div>
+                    <div class="titulo-publicaçao">
+                        <h3> Pão francês </h3>
+                    </div>
+                    <div class="descricao-blog">
+                        <p> Integer porta orci vitae nisi volutpat, quis aliquam nibh vehicula. In sagittis pellentesque nunc non hendrerit. Morbi sodales odio in nibh rhoncus mollis. </p>
+                    </div>  
+                </div>
+            </div> <!-- FIM CAIX PRINCIPAL BLOG -->
+        </section> <!-- FIM CONTAINER BLOG -->
+    </section> <!-- FIM CONTAINER PRINCIPAL -->
+
+    <!----------------------------------------------------------------->
+    
+    <section id="container-informacao"> <!-- INICIO CONTAINER INFORMAÇÃO -->
+        <div class="titulo-informacao">
+            <h1> Quer ter mais informações? </h1>
+        </div>
+
+        <div class="caixa-informacao">
+            <div class="caixa-btn-informacao">
+                <button type="button"> Agendar </button>
+            </div>
+            <div class="descrcao-infomacao">
+                <p> Praesentium earum rerum reprehenderit adipisci eveniet facere eum incidunt saepe reiciendis eius iusto excepturi harum. </p>
+            </div>
+        </div>
+    </section> <!-- FIM CONTAINER INFORMAÇÃO -->
+
+    <!----------------------------------------------------------------->
+
+    <footer>
+        <div class="caixa-localizacao">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5048538154897!2d-46.636775825922236!3d-23.550304961183738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59abaaae4233%3A0xd9186faf714bc5b1!2zUHJhw6dhIGRhIFPDqSAtIFPDqSwgU8OjbyBQYXVsbyAtIFNQLCAwMTAwMS0wMDA!5e0!3m2!1spt-BR!2sbr!4v1708007837220!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="caixa-contato">
+            <div class="icon-footer">
+                <svg width="25" height="25" fill="#897461" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4.356 2.639a2.181 2.181 0 0 1 3.262.203l2.244 2.883a2.18 2.18 0 0 1 .394 1.867l-.684 2.738a.848.848 0 0 0 .223.804l3.07 3.07a.847.847 0 0 0 .806.223l2.736-.683a2.181 2.181 0 0 1 1.868.393l2.882 2.243a2.18 2.18 0 0 1 .204 3.264l-1.293 1.292c-.925.925-2.307 1.331-3.596.878a23.293 23.293 0 0 1-8.762-5.525 23.292 23.292 0 0 1-5.525-8.762c-.453-1.287-.047-2.67.878-3.596L4.356 2.64Z" clip-rule="evenodd"></path>
+                </svg>
+                <p> (82) 999-000. </p>
+            </div>
+
+            <div class="icon-footer">
+                <svg width="25" height="25" fill="#897461" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.6s7.2-6.823 7.2-12a7.2 7.2 0 0 0-14.4 0c0 5.177 7.2 12 7.2 12Zm0-8.4A3.6 3.6 0 1 1 12 6a3.6 3.6 0 0 1 0 7.2Z"></path>
+                </svg>
+                <p> Av. lorem ipsum dolor sit - 333 sp. </p>
+            </div>
+
+            <div class="icon-footer">
+                <svg width="25" height="25" fill="#897461" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.96 2.4a.6.6 0 1 0 0 1.2h.6v1.284a8.401 8.401 0 1 0 5.742 15.383A8.4 8.4 0 0 0 18.109 7.7a.56.56 0 0 0 .015-.015l.425-.425.424.425a.6.6 0 1 0 .848-.848l-1.697-1.698a.6.6 0 1 0-.848.848l.425.425-.425.425a.611.611 0 0 0-.014.014 8.368 8.368 0 0 0-4.301-1.965V3.6h.6a.6.6 0 0 0 0-1.2h-3.6Zm2.4 6.72v4.08a.6.6 0 0 1-.6.6h-4.2a.6.6 0 1 1 0-1.2h3.6V9.12a.6.6 0 1 1 1.2 0Z"></path>
+                </svg>
+                <p> Das 8:00 às 21:00. </p>
+            </div>
+        </div>
+
+        <div class="caixa-logo-footer">
+            <img src="imagens/logo.png" alt="">
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit </p>
+        </div>
+    </footer>
+</body>
+</html>

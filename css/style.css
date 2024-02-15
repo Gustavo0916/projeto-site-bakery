@@ -1,0 +1,1144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+#container-principal {
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+/****************** INICIO HEADER ********************/
+header {
+    width: 100vw;
+    height: 90px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caixa-logo {
+    width: 100px;
+    height: 80px;
+}
+
+.img-logo img {
+    width: 95px;
+}
+
+.navegacao ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 370px;
+}
+
+.navegacao ul li button {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+nav ul li button::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    background-color: #9f7753;
+}
+
+nav ul li button:hover::after {
+    width: 100%;
+}
+
+.pesquisa {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icone-pesquisa {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.pesquisa input {
+    height: 30px;
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 10px;
+}
+
+/****************** FIM HEADER ********************/
+
+/****/
+
+/****/
+
+/****************** INICIO HOME ********************/
+#home {
+    width: 100%;
+    height: 495px;
+}
+
+.caixa-img-home {
+    position: fixed;
+    position: relative;
+    background: url(../imagens/img-home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo-home span {
+    color: #ffd41f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+
+.subTitulo {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.caixa-btn-home {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-home-1 button {
+    width: 190px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background: transparent;
+    color: #ffd41f;
+    font-weight: bold;
+    border: 1px solid #ffd41f;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-home-2 button {
+    width: 190px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background: #ffd41f;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.caixa-img-trigo img {
+    position: absolute;
+    width: 269px;
+    top: 10px;
+    left: -20px;
+    transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+@media screen and (min-width: 431px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .btn-abrir-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .caixa-logo {
+        margin-top: 15px;
+        margin-left: -55px;
+    }
+    
+    .navegacao {
+        display: none;
+    }
+
+    .caixa-img-trigo {
+        display: none;
+    }
+
+    .overlay-menu {
+        background-color: #000000c0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 88888;
+        display: none;
+    }
+
+    /* INICIO ESTILO MENU MOBILE */
+    .btn-abrir-menu i {
+        color: #d19c6d;
+        font-size: 35px;
+        margin-right: -50px;
+    }
+
+    .menu-mobile {
+        background-color: #000;
+        height: 100vh;
+        width: 0%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999999;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    .menu-mobile.abrir-menu {
+        width: 70%;
+    }
+
+    .menu-mobile.abrir-menu ~ .overlay-menu {
+        display: block;
+    }
+
+    .menu-mobile .btn-fechar {
+        padding: 20px 7%;
+    }
+
+    .menu-mobile .btn-fechar i {
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .menu-mobile nav ul {
+        text-align: right;
+    }
+
+    .menu-mobile nav ul li button {
+        background: transparent;
+        border: none;
+        color: #d19c6d;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 20px 7%;
+    }
+
+    .pesquisa {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .pesquisa input {
+        width: 200px;
+        height: 40px;
+    }
+    /* FIM ESTILO MENU MOBILE */
+
+    /* INICIO ESTILO HOME */
+    #home {
+        margin-top: 15px;
+    }
+
+    .caixa-btn-home button {
+        margin: 0px -7px;
+    }
+
+    .btn-home-1 button {
+        width: 160px;
+    }
+
+    .btn-home-2 button {
+        width: 160px;
+    }
+}
+
+/****/
+
+/****/
+
+/****************** INICIO CONTAINER SOBRE ********************/
+#container-sobre {
+    width: 100%;
+    height: 89.4vh;
+    overflow-y: hidden;
+}
+
+.caixa-principal-sobre {
+    position: relative;
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-left-sobre {
+    position: relative;
+    width: 490px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-fundo img {
+    position: absolute;
+    width: 650px;
+    top: -50px;
+    left: -65px;
+    opacity: .2;
+}
+
+.img-sobre img {
+    position: absolute;
+    width: 560px;
+    top: 170px;
+    left: -10px;
+}
+
+.caixa-right-sobre {
+    width: 490px;
+    height: 500px;
+}
+
+.titulo-sobre {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #2d3a29;
+}
+
+.titulo-sobre h1 span {
+    color: #ffc009;
+}
+
+.descricao-sobre p {
+    width: 100%;
+    height: 80px;
+    font-size: .93rem;
+    color: #bdb9b9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caixa-img-plantacao {
+    position: relative;
+    width: 100%;
+    height: 121px;
+    margin-top: 2px;
+}
+
+.caixa-img-plantacao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .6;
+    border-radius: 10px 10px 0px 0px;
+}
+
+@media screen and (max-width: 430px) {
+    #container-sobre {
+        width: 350px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .caixa-principal-sobre {
+        flex-direction: column-reverse;
+    }
+
+    .titulo-sobre {
+        width: 100%;
+        height: 80px;
+    }
+
+    .titulo-sobre h1 {
+        padding-left: 75px;
+        font-size: 1.8rem;
+    }
+
+    .descricao-sobre p {
+        margin-top: 15px;
+        padding: 0px 75px;
+    }
+
+    .caixa-img-plantacao {
+        display: none;
+    }
+
+    /****/
+    .caixa-left-sobre {
+        width: 300px;
+        margin-top: -100px;
+    }
+
+    .img-fundo img {
+        width: 450px;
+        position: absolute;
+    }
+
+    .img-sobre img {
+        position: absolute;
+        width: 350px;
+        top: 55px;
+    }
+}
+/****************** FIM CONTAINER SOBRE ********************/
+
+/****/
+
+/****/
+
+/****************** INICIO CONTAINER PRODUTO ********************/
+#container-produto {
+    width: 100%;
+    height: 100vh;
+    background: url(../imagens/fundo-personalizado.jpg);
+    background-position: center;
+    opacity: 0.85;
+}
+
+.titulo-produto {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-produto h1 {
+    color: #fff;
+    font-size: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo-produto h1 span {
+    color: #ffd41f;
+}
+
+.caixa-principal-produto {
+    width: 100%;
+    height: 425px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-produto {
+    width: 300px;
+    height: 420px;
+    border: 1px solid #ffe374;
+}
+
+.caixa-img-produto {
+    width: 100%;
+    height: 250px;
+}
+
+.caixa-img-produto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo-item-produto {
+    width: 100%;
+    color: #ffd41f;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.descricao-produto p {
+    text-align: center;
+    color: #fff5f5;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-produto {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-produto button {
+    color: #fff;
+    background: #8e6a4b;
+    margin-top: 20px;
+    padding: 10px 25px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 430px) {
+    #container-produto{
+        height: 200vh;
+    }
+
+    .titulo-produto h1 {
+        text-align: center;
+        font-size: 1.60rem;
+    }
+
+    .caixa-principal-produto {
+        flex-direction: column;
+        height: 182vh;
+    }
+}
+
+/****/
+
+/****/
+
+/****************** INICIO CONTAINER HISTORIA ********************/
+#container-historia {
+    width: 100%;
+    height: 100vh;
+    background: rgb(204,204,204);
+    background: radial-gradient(circle, rgba(204,204,204,1) 6%, rgba(255,255,255,1) 86%);
+}
+
+.titulo-historia {
+    width: 45vw;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.titulo-historia h1 {
+    font-size: 1.8rem;
+    color: #4f403d;
+    font-family: 'Raleway', sans-serif;
+}
+
+.titulo-historia h1 span {
+    color: #ebc015;
+}
+
+.caixa-principal-historia {
+    width: 100%;
+    height: 454px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+.caixa-historia {
+    width: 420px;
+    height: 400px;
+}
+
+.titulo-caixa-historia h2 {
+    color: #4f403d;
+    padding-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+.descricao-historia p {
+    color: #838282;
+    margin-top: 15px;
+    font-size: .9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caixa-img-historia {
+    width: 320px;
+    height: 400px;
+}
+
+.caixa-img-historia img {
+    width: 320px;
+    box-shadow: -6px -6px 30px #d19c6d;
+    border: 6px solid #fff;
+}
+
+.caixa-icons-historia {
+    width: 180px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-historia {
+    width: 100%;
+    height: 68px;
+    padding-top: 16px;
+}
+
+.btn-historia button {
+    border: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background: #8a765d;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.caixa-icons {
+    width: 100%;
+    height: 132.9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-img-icon img {
+    width: 50px;
+}
+
+.descricao-icons p {
+    color: #4f403d;
+    margin-top: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: .75rem;
+}
+
+@media screen and (max-width: 430px) {
+    #container-historia {
+        background: transparent;
+        height: 190vh;
+    }
+
+    .titulo-historia {
+        width: 100%;
+        text-align: center;
+        margin-left: -3px;
+        margin-top: 10px;
+    }
+
+    .caixa-principal-historia {
+        flex-direction: column;
+    }
+
+    .titulo-caixa-historia {
+        margin-left: 38px;
+    }
+
+    .descricao-historia {
+        padding: 0px 40px;
+    }
+
+    .btn-historia {
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+
+    .caixa-img-historia {
+        margin-top: 95px;
+    }
+}
+
+/****/
+
+/****/
+
+/****************** INICIO CONTAINER FALE CONOSCO ********************/
+#container-faleConosco {
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+}
+
+.caixa-img-fundo-bege {
+    width: 100%;
+    height: 150px;
+    background-image: url(../imagens/img-fundo-bege.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+.caixa-descricao {
+    width: 240px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-iconer-trigo img {
+    width: 20px;
+}
+
+.parceiros h1 {
+    color: #4f403d;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 3px 0;
+}
+
+.parceiros p {
+    color: #d19c6d;
+    font-weight: bold;
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.descricao-faleConosco p {
+    color: #8a765d;
+    font-size: .8rem;
+    margin: 5px 0;
+}
+
+.caixa-principal-faleConosco {
+    width: 100%;
+    height: 551px;
+    background-image: url(../imagens/img-fundo-fale-conosco.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-left-fc {
+    width: 530px;
+    height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-left-fc img {
+    width: 100%;
+    height: 390px;
+    border-radius: 15px 0 0 15px;
+}
+
+.caixa-right-fc {
+    width: 530px;
+    height: 390px;
+    background-image: url(../imagens/img-fundo-right.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 15px 15px 0;
+}
+
+.caixa-titulo-right {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.caixa-titulo-right h1 {
+    font-size: 2rem;
+    color: #4f403d;
+    font-family: 'Raleway', sans-serif;
+}
+
+.caixa-titulo-right h1 span {
+    color: #dfac14;
+}
+
+.descricao-caixa-right {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.descricao-caixa-right h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .95rem;
+    padding-bottom: 6px;
+}
+
+.descricao-caixa-right p {
+    color: #9b8f8f;
+}
+
+.caixa-btn-faleConosco {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.caixa-btn-faleConosco button {
+    color: #4f403d;
+    font-weight: bold;
+    border: 1.5px solid #4f403d;
+    background: transparent;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 430px) {
+    #container-faleConosco {
+        height: 180vh;
+    }
+
+    .caixa-img-fundo-bege {
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .caixa-img-fundo-bege .parceiros h1 {
+        font-size: 3rem;
+    }
+
+    .caixa-img-fundo-bege .parceiros p {
+        font-size: 1.1rem;
+    }
+
+    .descricao-faleConosco p {
+        font-size: 1rem;
+    }
+
+    .caixa-principal-faleConosco {
+        background-image: none;
+        flex-direction: column;
+    }
+
+    .caixa-left-fc {
+        margin-top: 215px;
+    }
+
+    /****/
+    .caixa-titulo-right h1 {
+        margin-left: 55px;
+    }
+
+    .descricao-caixa-right {
+        width: 388px;
+        margin-left: 55px;
+    }
+
+    .caixa-btn-faleConosco {
+        margin-left: 55px;
+    }
+}
+
+/****************** FIM CONTAINER FALE CONOSCO ********************/
+
+/****/
+
+/****/
+
+/****************** INICIO CONTAINER BLOG ********************/
+
+#container-blog {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.titulo-blog {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-blog h1 {
+    color: #4f403d;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.titulo-blog h1 span {
+    color: #ebc015;
+    font-family: 'Poppins', sans-serif;
+}
+
+.caixa-principal-blog {
+    width: 100%;
+    height: 484px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.caixa-blog {
+    width: 300px;
+    height: 420px;
+}
+
+.caixa-img-blog {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-img-blog img {
+    width: 300px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.titulo-publicaçao {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-publicaçao h3 {
+    color: #4f403d;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.descricao-blog p {
+    text-align: center;
+    color: #838282;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (max-width: 430px) {
+    #container-blog {
+        height: 176vh;
+    }
+
+    .titulo-blog {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .caixa-principal-blog {
+        width: 100%;
+        height: 160vh;
+        flex-direction: column;
+    }
+
+    .linha-separar {
+        width: 220px;
+        height: 1px;
+        margin-bottom: 17px;
+        border-bottom: 1px solid #4f403d;
+    }
+}
+
+/****************** FIM CONTAINER BLOG ********************/
+
+/****/
+
+/****/
+
+/****************** INICIO CONTAINER INFORMAÇÃO ********************/
+#container-informacao {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../imagens/img-fundo-personalizado.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-informacao {
+    color: #4f403d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.caixa-informacao {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-btn-informacao button {
+    padding: 10px 40px;
+    background: #86745c;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.descrcao-infomacao {
+    width: 350px;
+    margin-right: -55px;
+    color: #838282;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 430px) {
+    #container-informacao {
+        height: 55vh;
+    }
+
+    .caixa-informacao {
+        flex-direction: column-reverse;
+    }
+
+    .descrcao-infomacao {
+        text-align: center;
+        margin-top: 70px;
+        margin-right: 2px;
+    }
+
+    .caixa-btn-informacao {
+        margin-top: -20px;
+    }
+}
+
+/****************** FIM CONTAINER INFORMAÇÃO ********************/
+
+/****/
+
+/****/
+
+/****************** INICIO FOOTER ********************/
+footer {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../imagens/img-fundo-madeira.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    border: 1px solid #000;
+}
+
+.caixa-localizacao {
+    width: 400px;
+    height: 250px;
+}
+
+.caixa-localizacao iframe {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.caixa-contato {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.icon-footer {
+    display: flex;
+    gap: 15px;
+    color: #bdb9b9;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+.caixa-logo-footer {
+    width: 330px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-logo-footer p {
+    text-align: center;
+    color: #bdb9b9;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 430px) {
+    footer {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .caixa-localizacao iframe {
+        width: 335px;
+        margin-left: 36px;
+        margin-top: 15px;
+    }
+
+    .caixa-contato {
+        margin-left: -70px;
+        margin-top: 40px;
+        height: 200px;
+    }
+
+    .caixa-logo-footer {
+        margin-bottom: 30px;
+    }
+}
+
